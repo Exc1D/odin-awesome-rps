@@ -11,7 +11,7 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background: url("assets/anime-bg3.png") no-repeat center/cover fixed;
+  background: url("assets/anime-bg.png") no-repeat center/cover fixed;
   color: var(--font-color);
   text-align: center;
   display: flex;

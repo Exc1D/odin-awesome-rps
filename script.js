@@ -4,9 +4,9 @@ const scoreEl = document.getElementById("score");
 let playerScore = 0;
 let computerScore = 0;
 
-const choices = ["rock", "papers", "scissors"];
+const choices = ["rock", "paper", "scissors"];
 
-document.querySelector(".choice").forEach((button) => {
+document.querySelectorAll(".choice").forEach((button) => {
   button.addEventListener("click", () => {
     playRound(button.dataset.choice);
     playSound("assets/sound-click.mp3");
@@ -27,12 +27,12 @@ function playRound(player) {
     playSound("assets/sound-tie.mp3");
   } else if (
     (player === "rock" && computer === "scissors") ||
-    (player === "papers" && computer === "rock") ||
-    (player === "scissors" && computer === "papers")
+    (player === "paper" && computer === "rock") ||
+    (player === "scissors" && computer === "paper")
   ) {
     result = `You win! ${player} beats ${computer}.`;
     playerScore++;
-    playSound("assets/souund-win.mp3");
+    playSound("assets/sound-win.mp3");
   } else {
     result = `You lose! ${computer} beats ${player}.`;
     computerScore++;
@@ -42,8 +42,15 @@ function playRound(player) {
   scoreEl.textContent = `Player ${playerScore} - ${computerScore} Computer`;
 }
 
-function playSound() {
+function playSound(src) {
   const audio = new Audio(src);
-  audio.volume = 0.4;
+  audio.volume = 0.5;
   audio.play();
 }
+
+document.getElementById("resetBtn").addEventListener("click", () => {
+  playerScore = 0;
+  computerScore = 0;
+  resultEl.textContent = "Score";
+  scoreEl.textContent = `Player ${playerScore} - ${computerScore} Computer`;
+});
