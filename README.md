@@ -2,11 +2,12 @@
 
 **The Odin Project - Foundations**
 
-An animated Rock Paper Scissors game with shake animations and dynamic scoring!
+Kawaii Rock Paper Scissors game with dynamic scoring!
+
+![Kawaii RPS](assets/sc.png)
 
 ## 🎮 Features
 
-- ✨ **Animated hand gestures** - Hands shake before revealing choice!
 - 🎯 Score tracking for player and computer
 - 🔢 Round counter with game progression
 - 🎨 Visual feedback for wins, losses, and ties
@@ -21,8 +22,6 @@ An animated Rock Paper Scissors game with shake animations and dynamic scoring!
 
 ## 💡 What I Learned
 
-- CSS animations with keyframes
-- Timing JavaScript with CSS animations
 - Game state management (score, rounds, choices)
 - Random computer choice generation
 - Win/loss/tie logic with all combinations
