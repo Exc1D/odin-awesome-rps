@@ -3,8 +3,8 @@
   --secondary-color: #ff99cc;
   --tertiary-color: rgb(96, 254, 254);
 
-  --head-color: rgba(251, 243, 9, 0.658);
-  --font-color: #fff;
+  --head-color: rgba(251, 243, 9, 0.79);
+  --font-color: #111111;
   --primary-bg: rgba(255, 255, 255, 0.333);
   --second-bg: rgba(213, 213, 213, 0.547);
 }
@@ -69,7 +69,6 @@ body {
   border: 1px solid var(--tertiary-color);
   border-radius: 0.5rem;
   transition: 0.3s;
-  font-size: 0.85rem;
 }
 
 .choice:hover,
@@ -93,6 +92,11 @@ body {
 .title,
 h2 {
   color: var(--head-color);
-  text-shadow: 0 0 1rem var(--primary-color);
+  text-shadow: 0 0.1rem 0.2rem var(--primary-color);
   margin: 0;
+}
+
+#resetBtn {
+  font-size: 0.85rem;
+  color: var(--font-color);
 }
