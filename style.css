@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: url("assets/anime-bg.png") no-repeat center/cover fixed;
+  color: white;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.8rem;
+  margin-top: 30px;
+  text-shadow: 0 0 12px #ff69b4;
+}
+
+.choices {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.choice {
+  background: rgba(255, 255, 255, 0.1);
+  border: 3px solid #ff99cc;
+  border-radius: 20px;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 150px;
+}
+
+.choice img {
+  width: 100px;
+  height: 100px;
+}
+
+.choice:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ff99cc;
+}
+
+.result-box {
+  background: rgba(0, 0, 0, 0.35);
+  padding: 20px;
+  width: 300px;
+  margin: auto;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 15px #ffffff55;
+}
+
+#result {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px cyan;
+}
