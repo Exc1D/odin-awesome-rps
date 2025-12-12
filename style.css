@@ -1,15 +1,32 @@
+:root {
+  --primary-color: #ff69b4;
+  --secondary-color: #ff99cc;
+  --tertiary-color: rgb(96, 254, 254);
+
+  --font-color: #fff;
+  --primary-bg: rgba(255, 255, 255, 0.333);
+  --second-bg: rgba(213, 213, 213, 0.547);
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background: url("assets/anime-bg.png") no-repeat center/cover fixed;
-  color: white;
+  background: url("assets/anime-bg3.png") no-repeat center/cover fixed;
+  color: var(--font-color);
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.title {
-  font-size: 2.8rem;
-  margin-top: 30px;
-  text-shadow: 0 0 12px #ff69b4;
+.card-container {
+  padding: 1.5rem 1.75rem;
+  max-width: 38.75rem;
+  background: var(--primary-bg);
+  border: 3px solid var(--primary-color);
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem var(--secondary-color);
 }
 
 .choices {
@@ -19,11 +36,15 @@ body {
   gap: 30px;
 }
 
-.choice {
-  background: rgba(255, 255, 255, 0.1);
-  border: 3px solid #ff99cc;
+.choice,
+.result-box {
+  background: var(--second-bg);
+  border: 3px solid var(--secondary-color);
   border-radius: 20px;
   padding: 20px;
+}
+
+.choice {
   cursor: pointer;
   transition: 0.3s;
   width: 150px;
@@ -34,23 +55,47 @@ body {
   height: 100px;
 }
 
-.choice:hover {
+/* .choice:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #ff99cc;
-}
+  box-shadow: 0 0 15px var(--secondary-color);
+} */
 
 .result-box {
-  background: rgba(0, 0, 0, 0.35);
-  padding: 20px;
-  width: 300px;
+  width: 18.75rem;
   margin: auto;
-  border-radius: 20px;
   backdrop-filter: blur(5px);
-  box-shadow: 0 0 15px #ffffff55;
+}
+
+#resetBtn {
+  background-color: var(--primary-bg);
+  color: var(--font-color);
+  padding: 0.25em 0.4em;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  font-size: 0.85rem;
+}
+
+.choice:hover,
+#resetBtn:hover {
+  transform: scale(1.1);
+  background-color: var(--tertiary-color);
+  box-shadow: 0 0 10px var(--tertiary-color);
+}
+/* typography */
+
+.title {
+  font-size: 2.8rem;
+  margin-top: 30px;
 }
 
 #result {
   font-size: 1.6rem;
-  margin-bottom: 10px;
-  text-shadow: 0 0 8px cyan;
+}
+
+.title,
+h2 {
+  color: var(--font-color);
+  text-shadow: 0 0 1rem var(--primary-color);
+  margin: 0;
 }
