@@ -46,7 +46,7 @@ function playGame() {
           resultEl.textContent = "Game Over - You Win!";
           playSound("assets/sound-win.mp3");
         } else if (computerScore > playerScore) {
-          resultEl.textContent = "Game Over - Computer Wins!";
+          resultEl.textContent = "Game Over - The Computer Beats You!";
           playSound("assets/sound-lose.mp3");
         } else {
           resultEl.textContent = "Game Over - It's a Tie!";
