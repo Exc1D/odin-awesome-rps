@@ -50,7 +50,7 @@ function playGame() {
           playSound("assets/sound-lose.mp3");
         } else {
           resultEl.textContent = "Game Over - It's a Tie!";
-          playSound("assets/sound-tie.mp3");
+          playSound("assets/sound-lose.mp3");
         }
       }, 1000);
     }

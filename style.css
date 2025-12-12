@@ -56,11 +56,6 @@ body {
   height: 100px;
 }
 
-/* .choice:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px var(--secondary-color);
-} */
-
 .result-box {
   width: 18.75rem;
   margin: auto;
@@ -83,6 +78,7 @@ body {
   background-color: var(--tertiary-color);
   box-shadow: 0 0 10px var(--tertiary-color);
 }
+
 /* typography */
 
 .title {
