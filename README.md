@@ -36,7 +36,7 @@ Kawaii Rock Paper Scissors game with dynamic scoring!
 
 ## 🚀 Live Demo
 
-[Play the Game!](https://exc1d.github.io/odin-awesome-rps/)
+[Play the Game!](https://exc1d.github.io/odin-kawaii-rps/)
 
 ## 👨‍💻 Development Process
 
